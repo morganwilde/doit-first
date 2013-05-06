@@ -23,6 +23,10 @@
 		2E25FDCE173409E300EA9D80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E25FDA9173409E300EA9D80 /* Foundation.framework */; };
 		2E25FDD6173409E300EA9D80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E25FDD4173409E300EA9D80 /* InfoPlist.strings */; };
 		2E25FDD9173409E300EA9D80 /* doitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25FDD8173409E300EA9D80 /* doitTests.m */; };
+		2E25FDE517340EEA00EA9D80 /* app-logo-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E25FDE417340EEA00EA9D80 /* app-logo-retina.png */; };
+		2E8AE4021735526200A1D7E7 /* DIItemListLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AE4011735526200A1D7E7 /* DIItemListLabel.m */; };
+		2E8AE406173572C300A1D7E7 /* DIItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AE405173572C300A1D7E7 /* DIItemObject.m */; };
+		2E8AE8641734474C00168087 /* DIAddItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AE8631734474C00168087 /* DIAddItemController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,13 @@
 		2E25FDD5173409E300EA9D80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E25FDD7173409E300EA9D80 /* doitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doitTests.h; sourceTree = "<group>"; };
 		2E25FDD8173409E300EA9D80 /* doitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doitTests.m; sourceTree = "<group>"; };
+		2E25FDE417340EEA00EA9D80 /* app-logo-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-logo-retina.png"; sourceTree = "<group>"; };
+		2E8AE4001735526200A1D7E7 /* DIItemListLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DIItemListLabel.h; path = views/DIItemListLabel.h; sourceTree = "<group>"; };
+		2E8AE4011735526200A1D7E7 /* DIItemListLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DIItemListLabel.m; path = views/DIItemListLabel.m; sourceTree = "<group>"; };
+		2E8AE404173572C300A1D7E7 /* DIItemObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DIItemObject.h; path = models/DIItemObject.h; sourceTree = "<group>"; };
+		2E8AE405173572C300A1D7E7 /* DIItemObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DIItemObject.m; path = models/DIItemObject.m; sourceTree = "<group>"; };
+		2E8AE8621734474C00168087 /* DIAddItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIAddItemController.h; sourceTree = "<group>"; };
+		2E8AE8631734474C00168087 /* DIAddItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIAddItemController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +98,7 @@
 		2E25FD9B173409E300EA9D80 = {
 			isa = PBXGroup;
 			children = (
+				2E25FDE417340EEA00EA9D80 /* app-logo-retina.png */,
 				2E25FDAD173409E300EA9D80 /* doit */,
 				2E25FDD1173409E300EA9D80 /* doitTests */,
 				2E25FDA6173409E300EA9D80 /* Frameworks */,
@@ -117,12 +129,16 @@
 		2E25FDAD173409E300EA9D80 /* doit */ = {
 			isa = PBXGroup;
 			children = (
+				2E8AE403173572A500A1D7E7 /* models */,
+				2E8AE3FF1735520400A1D7E7 /* views */,
 				2E25FDB6173409E300EA9D80 /* DIAppDelegate.h */,
 				2E25FDB7173409E300EA9D80 /* DIAppDelegate.m */,
 				2E25FDBF173409E300EA9D80 /* MainStoryboard.storyboard */,
 				2E25FDC2173409E300EA9D80 /* DIViewController.h */,
 				2E25FDC3173409E300EA9D80 /* DIViewController.m */,
 				2E25FDAE173409E300EA9D80 /* Supporting Files */,
+				2E8AE8621734474C00168087 /* DIAddItemController.h */,
+				2E8AE8631734474C00168087 /* DIAddItemController.m */,
 			);
 			path = doit;
 			sourceTree = "<group>";
@@ -158,6 +174,24 @@
 				2E25FDD4173409E300EA9D80 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E8AE3FF1735520400A1D7E7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2E8AE4001735526200A1D7E7 /* DIItemListLabel.h */,
+				2E8AE4011735526200A1D7E7 /* DIItemListLabel.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		2E8AE403173572A500A1D7E7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2E8AE404173572C300A1D7E7 /* DIItemObject.h */,
+				2E8AE405173572C300A1D7E7 /* DIItemObject.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +271,7 @@
 				2E25FDBC173409E300EA9D80 /* Default@2x.png in Resources */,
 				2E25FDBE173409E300EA9D80 /* Default-568h@2x.png in Resources */,
 				2E25FDC1173409E300EA9D80 /* MainStoryboard.storyboard in Resources */,
+				2E25FDE517340EEA00EA9D80 /* app-logo-retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +309,9 @@
 				2E25FDB4173409E300EA9D80 /* main.m in Sources */,
 				2E25FDB8173409E300EA9D80 /* DIAppDelegate.m in Sources */,
 				2E25FDC4173409E300EA9D80 /* DIViewController.m in Sources */,
+				2E8AE8641734474C00168087 /* DIAddItemController.m in Sources */,
+				2E8AE4021735526200A1D7E7 /* DIItemListLabel.m in Sources */,
+				2E8AE406173572C300A1D7E7 /* DIItemObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +423,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "doit/doit-Prefix.pch";
 				INFOPLIST_FILE = "doit/doit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,7 +436,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "doit/doit-Prefix.pch";
 				INFOPLIST_FILE = "doit/doit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,6 +496,7 @@
 				2E25FDDE173409E300EA9D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E25FDDF173409E300EA9D80 /* Build configuration list for PBXNativeTarget "doitTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +505,7 @@
 				2E25FDE1173409E300EA9D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

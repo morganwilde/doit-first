@@ -1,5 +1,5 @@
 //
-//  DIViewController.h
+//  DIAddItem.h
 //  doit
 //
 //  Created by Morgan Wilde on 03/05/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DIViewController : UIViewController
-- (void)fetchedData:(NSData *)responseData;
+@interface DIAddItemController : UIViewController
+
 @end
